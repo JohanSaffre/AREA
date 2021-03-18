@@ -1,0 +1,92 @@
+.calendarWidget {
+    background: #29272C;
+    width: 40%;
+    height: 150px;
+    border-radius: 20px;
+    filter: drop-shadow(7px 5px 4px rgba(153, 208, 182, 0.29));
+    display: flex;
+    flex-direction: row;
+}
+
+.topsideCalendar {
+  position: absolute;
+  top: 0;
+  height: 30%;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  background: #6D6D6D 69%;
+}
+
+.calendarLeftBar {
+  width: 10%;
+  background: #6D6D6D 69%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.calendarGoogleIcon {
+  margin-top: 15px;
+}
+
+.calendarLeftPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.calendarMiddlePart {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 80%;
+  background: #4285F4;
+}
+
+.calendarInfos {
+  height: 100%;
+  margin-top: -10px;
+}
+
+.calendarSummary {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.calendarHour {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: -25px;
+}
+
+.calendarRightPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+@media (max-width: 1350px) {
+  .calendarWidget {
+    width: 90%;
+    margin-top: 25px;
+    height: 125px;
+  }
+
+  .calendarInfos {
+    margin-top: 10px;
+  }
+
+  .calendarSummary {
+    font-size: 20px;
+  }
+
+  .calendarHour {
+    margin-top: -10px;
+    font-size: 16px;
+  }
+}

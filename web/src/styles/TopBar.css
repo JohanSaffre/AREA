@@ -1,0 +1,140 @@
+.topBar {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  padding: 2%;
+  padding-left: 5%;
+}
+
+.name > h1 {
+  font-size: 42px;
+  color: white;
+}
+
+.addWidget {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plusIcon {
+  margin-left: 15px;
+}
+
+.profilePicture {
+  padding: 2%;
+  padding-right: 5%;
+}
+
+/* ⬇⬇⬇ Modal ⬇⬇⬇ */
+
+.oneSwitch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spotifySwitchContainer {
+  font-size: 24px;
+  margin-top: 75px;
+}
+
+.spotifyTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spotifyDesactivateButton {
+  border-radius: 5px;
+  margin-top: -10px;
+  width: 10%;
+  min-width: 100px;
+}
+
+.googleTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.googleDesactivateButton {
+  border-radius: 5px;
+  margin-top: -10px;
+  width: 10%;
+  min-width: 100px;
+}
+
+.spotifySwitchOnly {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: 12.5%
+}
+
+.googleSwitchOnly {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: 12.5%
+}
+
+.googleSwitchContainer {
+  font-size: 24px;
+  margin-top: 75px;
+}
+
+.validateButtonContainer {
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+.validateButton {
+  height: 50px;
+  width: 50%;
+  margin-bottom: -50px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  .textClickHere {
+    display: none;
+  }
+
+  .oneSwitch {
+    margin-top: 10px;
+  }
+
+  .spotifySwitchContainer {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .spotifySwitchOnly {
+    flex-direction: column;
+  }
+
+  .googleSwitchOnly {
+    flex-direction: column;
+  }
+
+  .googleSwitchContainer {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+}

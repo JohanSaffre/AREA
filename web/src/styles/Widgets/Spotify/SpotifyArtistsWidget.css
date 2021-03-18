@@ -1,0 +1,78 @@
+.artistsWidget {
+    background: #79BF9E;
+    width: 30%;
+    /* min-width: 330px; */
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+    filter: drop-shadow(7px 5px 4px rgba(153, 208, 182, 0.29));
+}
+
+.topsideArtists {
+    position: absolute;
+    top: 0;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.topsideArtists>p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.spotifyIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.downsideArtists {
+    position: absolute;
+    background: #76AF94;
+    bottom: 0;
+    height: 65%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.artistsPics {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+
+.oneArtistPic {
+    width: 20%;
+}
+
+.artistsNames {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+
+.oneArtistName {
+    width: 20%;
+}
+
+@media (max-width: 1350px) {
+    .artistsWidget {
+        margin-top: 25px;
+        width: 90%;
+        height: 175px;
+    }
+}

@@ -1,0 +1,38 @@
+.line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.line2 {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.line3 {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1350px) {
+  .line1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .line3 {
+    flex-direction: column;
+    align-items: center;
+  }
+}

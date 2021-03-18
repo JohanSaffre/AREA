@@ -1,0 +1,55 @@
+.helloWidget {
+    background: #A9B6D6;
+    /* margin-left: 5%; */
+    width: 40%;
+    height: 127px;
+    border-radius: 20px;
+    filter: drop-shadow(7px 5px 4px rgba(153, 208, 182, 0.29));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.helloWidget > img {
+  margin-right: 25px;
+  height: 100px;
+}
+
+.helloWidgetTexts {
+  text-align: left;
+}
+
+.helloText {
+    color: black;
+    margin-top: -15px;
+    margin-left: 25px;
+}
+
+.dateText {
+  color: #E5E5E5;
+  
+  font-size: 20px;
+  margin-top: -15px;
+  margin-left: 25px;
+}
+
+@media (max-width: 1350px) {
+  .helloWidget {
+    width: 90%;
+  }
+
+  .helloText {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .dateText {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .helloWidget > img {
+    display: none;
+  }
+}

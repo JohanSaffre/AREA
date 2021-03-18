@@ -1,0 +1,103 @@
+.playlistsWidget {
+    background: #79BF9E;
+    width: 30%;
+    /* min-width: 330px; */
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+    filter: drop-shadow(7px 5px 4px rgba(153, 208, 182, 0.29));
+}
+
+.topsidePlaylists {
+    position: absolute;
+    top: 0;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.topsidePlaylists>p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.spotifyIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.downsidePlaylists {
+    position: absolute;
+    background: #76AF94;
+    bottom: 0;
+    height: 65%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.playlistsPics {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+
+.onePlaylistPic {
+    width: 20%;
+    cursor: pointer;
+}
+
+/* .playLogo:hover {
+    filter: brightness(100%);
+} */
+
+/* .onePlaylistPic > img {
+    cursor: pointer;
+} */
+
+.playLogo {
+    display: none;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 40px;
+}
+
+.onePlaylistPic:hover {
+    filter: brightness(50%);
+}
+
+.onePlaylistPic:hover .playLogo{
+    display: block;
+    filter: brightness(100%);
+}
+
+
+.playlistsNames {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+
+.onePlaylistName {
+    width: 20%;
+}
+
+@media (max-width: 1350px) {
+    .playlistsWidget {
+        width: 90%;
+        height: 175px;
+    }
+}

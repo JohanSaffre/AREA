@@ -1,0 +1,45 @@
+{
+    "app": "Surface.",
+    "version": "1.0.0",
+    "description": "API de l'application Surface. Un dashboard regroupant plusieurs services vous facilitant la vie",
+    "auteurs": "Abdou-Rahman YOUSSOUF IBRAHIM",
+    "lancement": "",
+    "date": "",
+    "utilisateurs": 0,
+    "services": [
+        {
+            "name": "Google",
+            "utilisateurs": 0
+        },
+        {
+            "name": "Spotify",
+            "utilisateurs": 0
+        }
+    ],
+    "widgets": [
+        {
+            "name": "google_calendar",
+            "utilisateurs": 0
+        },
+        {
+            "name": "google_recent_photos",
+            "utilisateurs": 0
+        },
+        {
+            "name": "google_random_photo",
+            "utilisateurs": 0
+        },
+        {
+          "name": "spotify_player",
+          "utilisateurs": 0
+        },
+        {
+          "name": "spotify_playlist",
+          "utilisateurs": 0
+        },
+        {
+          "name": "spotify_favorite",
+          "utilisateurs": 0
+        }
+    ]
+}

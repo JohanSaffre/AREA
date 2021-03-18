@@ -1,0 +1,76 @@
+version: "3"
+
+networks:
+  network:
+    driver: bridge
+
+services:
+  react-app:
+    container_name: react-app
+    build:
+      context: ./web/
+      dockerfile: Dockerfile
+    volumes:
+      - './web:/app'
+    ports:
+      - 3000:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+  api:
+    container_name: api
+    build:
+      context: ./api/
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+    depends_on:
+      - database
+    environment:
+      - COOKIE_SECRET=${COOKIE_SECRET}
+      - PGHOST=host.docker.internal
+      - PGUSER=${PG_USER}
+      - PGPASSWORD=${PG_PWD}
+      - PGDATABASE=${PG_DB}
+      - DATABASE_URL=postgres://${PG_USER}:${PG_PWD}@database:5432/${PG_DB}
+    ports:
+      - "8080:8080"
+    networks:
+      - network
+
+  migrate:
+    container_name: migrate
+    build:
+      context: ./api/
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+    depends_on:
+     - database
+    environment:
+      - PGHOST=host.docker.internal
+      - PGUSER=${PG_USER}
+      - PGPASSWORD=${PG_PWD}
+      - PGDATABASE=${PG_DB}
+      - DATABASE_URL=postgres://${PG_USER}:${PG_PWD}@database:5432/${PG_DB}
+    command: npm run migrate up
+    networks:
+      - network
+
+  database:
+    container_name: database
+    environment:
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PWD}
+      - POSTGRES_DB=${PG_DB}
+    image: postgres:13-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - database-data:/var/lib/postgresql/data
+    networks:
+      - network
+
+volumes:
+  database-data:
+    name: database-data

@@ -1,0 +1,4 @@
+{
+    "_comment" : "Set the 'cookie' variable to false if you don't want to check cookie",
+    "cookie": true
+}

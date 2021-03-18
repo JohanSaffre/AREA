@@ -1,0 +1,66 @@
+.randomPhotoWidget {
+  background: #29272C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30%;
+  border-radius: 20px;
+  padding: 25px;
+  filter: drop-shadow(7px 5px 4px rgba(153, 208, 182, 0.29));
+}
+
+.topsideRandomPhoto {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  background: #6D6D6D 69%;
+}
+
+.topsideRandomPhoto > p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.googleRandomPhotoPicture {
+  width: auto;
+  height: 250px;
+}
+
+.googleIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.downsideRandomPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.randomizeButton {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  .randomPhotoWidget{
+    margin-top: 25px;
+    width: 75%;
+  }
+
+  .googleRandomPhotoPicture {
+    width: 250px;
+    height: auto;
+  }
+}

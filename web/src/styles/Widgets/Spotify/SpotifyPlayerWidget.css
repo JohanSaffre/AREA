@@ -1,0 +1,73 @@
+.playerWidget {
+    background: #79BF9E;
+    width: 18%;
+    /* min-width: 330px; */
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+    filter: drop-shadow(7px 5px 4px rgba(153, 208, 182, 0.29));
+}
+
+.topsidePlayer {
+    position: absolute;
+    top: 0;
+    height: 65%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.topsidePlayer > img {
+    border-radius: 5px;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+
+.spotifyIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.songInfos {
+    text-align: start;
+    width: 75%;
+    line-height: 0.25;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+.songInfos > p {
+    font-size: 16px;
+}
+
+.downsidePlayer {
+    position: absolute;
+    background: #76AF94;
+    bottom: 0;
+    height: 35%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.icons {
+    margin-left: 75px;
+    margin-right: 75px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1350px) {
+    .playerWidget {
+        margin-top: 25px;
+        width: 90%;
+    }
+}
